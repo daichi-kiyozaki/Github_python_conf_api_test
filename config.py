@@ -1,5 +1,6 @@
 import os
 import sys
+sys.path.append('/Users/daichikiyozaki/confluence_api_test/venv/lib/python3.10/site-packages')
 from dotenv import load_dotenv
 
 # Load environment variables from .env file

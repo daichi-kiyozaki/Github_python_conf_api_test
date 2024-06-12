@@ -23,7 +23,7 @@ jobs:
         env:
             # secretsに登録した環境変数
             CONFLUENCE_URL: ${{ secrets.CONFLUENCE_URL }}
-            CONFLUENCE_URL: ${{ secrets.CONFLUENCE_URL }}
-            CONFLUENCE_URL: ${{ secrets.CONFLUENCE_URL }}
+            CONFLUENCE_USERNAME: ${{ CONFLUENCE_USERNAME }}
+            CONFLUENCE_TOKEN: ${{ CONFLUENCE_TOKEN }}
 
         run: confluence_api_test.py

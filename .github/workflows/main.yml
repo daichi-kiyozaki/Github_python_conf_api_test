@@ -20,11 +20,11 @@ jobs:
         run: |
           pip install --upgrade pip
           pip3 install -r requirements.txt
+          ls
       - name: Run Python
         env:
             # secretsに登録した環境変数
             CONFLUENCE_URL: ${{ secrets.CONFLUENCE_URL }}
             CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
             CONFLUENCE_TOKEN: ${{ secrets.CONFLUENCE_TOKEN }}
-
         run: confluence_api_test.py

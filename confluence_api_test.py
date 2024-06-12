@@ -1,9 +1,10 @@
 # on GithubActions
+print('ok')
 from atlassian import Confluence
 import re
 import os
 
-
+print('ok')
 # secretsに登録した環境変数の呼び出し
 CONFLUENCE_URL = os.environ.get("CONFLUENCE_URL")
 CONFLUENCE_USERNAME = os.environ.get("CONFLUENCE_USERNAME ")

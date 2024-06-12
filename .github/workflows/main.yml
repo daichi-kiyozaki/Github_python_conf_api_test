@@ -17,5 +17,7 @@ jobs:
         with:
           python-version: '3.10.5'
           architecture: 'x64'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
       - name: Run Python
         run: confluence_api_test.py

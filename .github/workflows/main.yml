@@ -20,4 +20,10 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
       - name: Run Python
+        env:
+            # secretsに登録した環境変数
+            CONFLUENCE_URL: ${{ secrets.CONFLUENCE_URL }}
+            CONFLUENCE_URL: ${{ secrets.CONFLUENCE_URL }}
+            CONFLUENCE_URL: ${{ secrets.CONFLUENCE_URL }}
+
         run: confluence_api_test.py

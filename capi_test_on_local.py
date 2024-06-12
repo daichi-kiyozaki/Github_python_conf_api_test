@@ -1,16 +1,9 @@
 from atlassian import Confluence
-# import config
+import config
 import re
-import os
 
 
-# secretsに登録した環境変数の呼び出し
-CONFLUENCE_URL = os.environ.get("CONFLUENCE_URL")
-CONFLUENCE_USERNAME = os.environ.get("CONFLUENCE_USERNAME ")
-CONFLUENCE_TOKEN = os.environ.get("CONFLUENCE_TOKEN")
-
-
-confluence = Confluence(url=CONFLUENCE_URL, username=CONFLUENCE_USERNAME, password=CONFLUENCE_TOKEN)
+confluence = Confluence(url=config.CONFLUENCE_URL, username=config.CONFLUENCE_USERNAME, password=config.CONFLUENCE_TOKEN)
 
 # idでページ情報を取得
 loaded_page_id = "16318465"

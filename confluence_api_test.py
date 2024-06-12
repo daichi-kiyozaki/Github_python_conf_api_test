@@ -6,7 +6,7 @@ import os
 
 # secretsに登録した環境変数の呼び出し
 CONFLUENCE_URL = os.environ.get("CONFLUENCE_URL")
-CONFLUENCE_USERNAME = os.environ.get("CONFLUENCE_USERNAME ")
+CONFLUENCE_USERNAME = os.environ.get("CONFLUENCE_USERNAME")
 CONFLUENCE_TOKEN = os.environ.get("CONFLUENCE_TOKEN")
 
 print(CONFLUENCE_URL)

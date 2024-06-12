@@ -9,7 +9,7 @@ CONFLUENCE_URL = os.environ.get("CONFLUENCE_URL")
 CONFLUENCE_USERNAME = os.environ.get("CONFLUENCE_USERNAME ")
 CONFLUENCE_TOKEN = os.environ.get("CONFLUENCE_TOKEN")
 
-
+print(CONFLUENCE_URL)
 confluence = Confluence(url=CONFLUENCE_URL, username=CONFLUENCE_USERNAME, password=CONFLUENCE_TOKEN)
 
 # idでページ情報を取得

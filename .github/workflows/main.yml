@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  CONFLUENCE_URL: https://kojiro30.atlassian.net
+  CONFLUENCE_URL: ${{ secrets.CONFLUENCE_URL }}
   CONFLUENCE_USERNAME: ${{ secrets.CONFLUENCE_USERNAME }}
   CONFLUENCE_TOKEN: ${{ secrets.CONFLUENCE_TOKEN }}
 

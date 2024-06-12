@@ -12,7 +12,7 @@ res = confluence.get_page_by_id(
 print("---res---")
 print(res)
 '''
-# タイトルでページ情報を取得
+# タイトルでページ情報を取得(本文は取得できない)
 page_title = "conv_check_test_2"
 res2 = confluence.get_page_by_title(
     space=config.CONFLUENCE_SPACE_KEY,

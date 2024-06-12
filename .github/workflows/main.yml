@@ -20,8 +20,9 @@ jobs:
       - name: Install dependencies
         run: |
           sudo apt install python3-pip
-          pip install atlassian-python-api
-          pip install python-dotenv
+          pip3 --version
+          pip3 install atlassian-python-api
+          pip3 install python-dotenv
       - name: Run Python
         env:
             # secretsに登録した環境変数
